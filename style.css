@@ -75,7 +75,8 @@ section{
     background-color: var(--main-color); /* Color of the underline */
     transition: width 0.3s ease;
 }
-.navbar a:hover::after{
+.navbar a:hover::after,
+.navbar a.active::after {
     width: 100%;
 }
 .navbar a:hover, .navbar a:active{

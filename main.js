@@ -10,6 +10,17 @@ menuIcon.onclick = () =>{
 
 
 
+/*************** Nav bar active link *****************/ 
+const navbarLinks = document.querySelectorAll('.navbar a');
+
+navbarLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navbarLinks.forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+
 /************** Scroll section active link ****************/ 
 
 let sections  = document.querySelectorAll('section');
